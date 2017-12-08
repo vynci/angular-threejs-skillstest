@@ -1,0 +1,28 @@
+
+$topnav-background-color: #222;
+.topnav {
+    border-radius: 0;
+    background-color: $topnav-background-color;
+    padding : 6px;
+    z-index:2;
+}
+.title-container {
+    padding: 17px 30px;
+
+    span{
+        font-size: 18px;
+        color: white;
+    }
+}
+.header .navbar {
+    background: $topnav-background-color !important;
+    height: 55px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
