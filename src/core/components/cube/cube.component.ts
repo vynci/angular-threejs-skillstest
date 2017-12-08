@@ -54,8 +54,8 @@ export class CubeComponent implements AfterViewInit {
    * Create the cube
    */
   private createCube() {
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    const geo = new THREE.EdgesGeometry( geometry );
+    const geometry = new THREE.BoxBufferGeometry( 1, 1, 1 );
+    const geo = new THREE.EdgesGeometry( geometry, 1);
     const mat = new THREE.LineBasicMaterial( { color: 0x00ff00, linewidth: 2 } );
     const wireframe = new THREE.LineSegments( geo, mat );
 
